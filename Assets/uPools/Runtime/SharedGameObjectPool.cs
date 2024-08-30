@@ -6,8 +6,8 @@ namespace uPools
 {
     public static class SharedGameObjectPool
     {
-        static readonly Dictionary<GameObject, Stack<GameObject>> pools = new();
-        static readonly Dictionary<GameObject, Stack<GameObject>> cloneReferences = new();
+        static readonly Dictionary<GameObject, Stack<GameObject>> pools = new Dictionary<GameObject, Stack<GameObject>>();
+        static readonly Dictionary<GameObject, Stack<GameObject>> cloneReferences = new Dictionary<GameObject, Stack<GameObject>>();
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         static void Init()

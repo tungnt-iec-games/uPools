@@ -6,7 +6,7 @@ namespace uPools
     public abstract class ObjectPoolBase<T> : IObjectPool<T>
         where T : class
     {
-        protected readonly Stack<T> stack = new(32);
+        protected readonly Stack<T> stack = new Stack<T>(32);
         bool isDisposed;
 
         protected abstract T CreateInstance();

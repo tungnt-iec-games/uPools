@@ -13,7 +13,7 @@ namespace uPools
         }
 
         readonly GameObject original;
-        readonly Stack<GameObject> stack = new(32);
+        readonly Stack<GameObject> stack = new Stack<GameObject>(32);
         bool isDisposed;
 
         public int Count => stack.Count;

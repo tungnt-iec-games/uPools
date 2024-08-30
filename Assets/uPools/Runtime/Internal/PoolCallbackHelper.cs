@@ -5,7 +5,7 @@ namespace uPools
 {
     internal static class PoolCallbackHelper
     {
-        static readonly List<IPoolCallbackReceiver> componentsBuffer = new();
+        static readonly List<IPoolCallbackReceiver> componentsBuffer = new List<IPoolCallbackReceiver>();
 
         public static void InvokeOnRent(GameObject obj)
         {

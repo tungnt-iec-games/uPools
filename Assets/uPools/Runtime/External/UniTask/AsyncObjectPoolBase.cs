@@ -9,7 +9,7 @@ namespace uPools
     public abstract class AsyncObjectPoolBase<T> : IAsyncObjectPool<T>
         where T : class
     {
-        protected readonly Stack<T> stack = new(32);
+        protected readonly Stack<T> stack = new Stack<T>(32);
         bool isDisposed;
 
         protected abstract UniTask<T> CreateInstanceAsync(CancellationToken cancellationToken);
