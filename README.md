@@ -39,6 +39,11 @@ Furthermore, it provides support for asynchronous object pooling using UniTask a
 https://github.com/AnnulusGames/uPools.git?path=/Assets/uPools
 ```
 
+For compatibility with C# 8.0, please use the following URL:
+```
+https://github.com/tungnt-iec-games/uPools.git?path=/Assets/uPools
+```
+
 Alternatively, open the Packages/manifest.json file and add the following to the dependencies block:
 
 ```json
